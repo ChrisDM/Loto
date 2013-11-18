@@ -9,9 +9,10 @@ public class Grille {
 
     public boolean aiJeLeJackpot(int[] tirage){
         for (int tir : tirage){
-            for (int g : grille)
+            for (int g : grille){
                 if (tir == g)
                     nbrBonNum++;
+            }
         }
         return (nbrBonNum == grille.length);
     }
