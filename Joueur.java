@@ -1,7 +1,7 @@
 public class Joueur {
 
     private int[] nbrDeJeu;
-    public final int NBRDEJACKPOT;
+    private final int NBRDEJACKPOT;
     private int totDeJeu;
 
     public Joueur(){
