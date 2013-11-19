@@ -26,7 +26,7 @@ public class Joueur {
             System.out.println("\nAu bout de " + nbrDeJeu[i-1] + " tirages  Jackpot !!!\n");
         }
 
-        System.out.println("\nJ'ai touché le jackpot en moyenne 1 fois sur " + totDeJeu / NBRDEJACKPOT + " tirages\n");
-        System.out.println("Alors que la probabilité est de 1 chance sur 13983816");
+        System.out.println("\nSur " + NBRDEJACKPOT + " tirages, j'ai touché le jackpot en moyenne 1 fois sur " + totDeJeu / NBRDEJACKPOT);
+        System.out.println("\nAlors que la probabilité est de 1 chance sur 13983816");
     }
 }
