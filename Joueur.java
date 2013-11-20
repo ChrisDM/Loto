@@ -2,7 +2,7 @@ public class Joueur {
 
     private int[] nbrDeJeu;
     private final int NBRDEJACKPOT;
-    private int totDeJeu;
+    private long totDeJeu;
 
     public Joueur(){
         NBRDEJACKPOT = 100;
