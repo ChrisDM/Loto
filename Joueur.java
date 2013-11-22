@@ -1,8 +1,12 @@
+
+import java.text.DecimalFormat;
+
 public class Joueur {
 
     private int[] nbrDeJeu;
     private final int NBRDEJACKPOT;
     private long totDeJeu;
+    DecimalFormat df = new DecimalFormat("###,###");
 
     public Joueur(){
         NBRDEJACKPOT = 100;
@@ -23,10 +27,10 @@ public class Joueur {
             } while (!(new Grille().aiJeLeJackpot(new JeuDuLoto().tirage())));
 
             totDeJeu += nbrDeJeu[i-1];
-            System.out.println("\nAu bout de " + nbrDeJeu[i-1] + " tirages  Jackpot !!!\n");
+            System.out.println("\nAu bout de " + df.format(nbrDeJeu[i-1]) + " tirages  Jackpot !!!\n");
         }
 
-        System.out.println("\nSur " + NBRDEJACKPOT + " tirages, j'ai touché le jackpot en moyenne 1 fois sur " + totDeJeu / NBRDEJACKPOT);
-        System.out.println("\nAlors que la probabilité est de 1 chance sur 13983816");
+        System.out.println("\nSur " + NBRDEJACKPOT + " tirages, j'ai touché le jackpot en moyenne 1 fois sur " + df.format(totDeJeu / NBRDEJACKPOT));
+        System.out.println("\nAlors que la probabilité est de 1 chance sur 13 983 816");
     }
 }
